@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "989507021943",
+    "firebase_url": "https://finansa-1b6e8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "finansa-1b6e8",
+    "storage_bucket": "finansa-1b6e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989507021943:android:e73e1b8cd0bf0e7d73ea72",
+        "android_client_info": {
+          "package_name": "com.finansa.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArpJS9Ohf41YmrpB7VuT6RUEZ9R58nec4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -23,7 +23,40 @@
 -keep class androidx.datastore.** { *; }
 
 # Keep all model classes (sesuaikan dengan package kamu)
--keepclassmembers class com.example.finansa_new.** { *; }
+-keepclassmembers class com.finansa.app.** { *; }
+
+# Firestore
+-keep class com.google.firebase.firestore.** { *; }
+-keepclassmembers class * {
+    @com.google.firebase.firestore.PropertyName <fields>;
+    @com.google.firebase.firestore.PropertyName <methods>;
+}
+
+# Kotlin coroutines (dipakai Riverpod)
+-keepnames class kotlinx.coroutines.** { *; }
+-dontwarn kotlinx.coroutines.**
+
+# Riverpod / Flutter engine reflection
+-keep class io.flutter.plugins.** { *; }
+-keep class * extends io.flutter.plugin.common.MethodChannel$MethodCallHandler { *; }
+
+# Timezone plugin
+-keep class com.google.android.gms.** { *; }
+
+# Keep notification model from flutter_local_notifications 
+-keep class com.dexterous.flutterlocalnotifications.** { *; }
+-keepclassmembers class com.dexterous.flutterlocalnotifications.** { *; }
+
+# Keep Gson TypeToken and all generic type info
+-keep class com.google.gson.** { *; }
+-keep class com.google.gson.reflect.TypeToken { *; }
+-keep class * extends com.google.gson.reflect.TypeToken { *; }
+
+# Firestore model serialization
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepattributes EnclosingMethod
+-keepattributes InnerClasses
 
 # Please add these rules to your existing keep rules in order to suppress warnings.
 # This is generated automatically by the Android Gradle plugin.
